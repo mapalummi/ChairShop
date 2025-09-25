@@ -11,6 +11,11 @@ FONT SIZE SYSTEM (px)
   src: url("./fonts/Inter_24pt-Regular.ttf");
 }
 
+/* 
+MAIN COLOR: #4D685A 
+GRAY COLOR: #39393A 
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +27,8 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 body {
   font-family: "Inter", sans-serif;
+  color: #39393a;
+  border-bottom: 8px solid #4D685A;
 }
 
 .container {
@@ -47,6 +54,36 @@ h2 {
   column-gap: 80px;
 }
 
+/* BUTTON STYLING */
+.btn:link,
+.btn:visited {
+  background-color: #4d685a;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #577565;
+}
+
+.btn--big:link,
+.btn--big:visited {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+.btn--small:link,
+.btn-small:visited {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
@@ -61,7 +98,6 @@ header {
 
 .header-text-box {
   align-self: center;
-  
 }
 
 h1 {
@@ -98,6 +134,9 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #4D685A;
+  color: #fff;
+  padding: 24px;
 }
 
 .testimonial-box {
@@ -156,4 +195,5 @@ h3 {
 footer {
   margin-bottom: 48px;
   font-size: 14px;
+  color: #696969;
 }
