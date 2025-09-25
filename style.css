@@ -103,7 +103,7 @@ header {
 
 h1 {
   margin-bottom: 32px;
-  /* / 44 / 52 / 62 / */
+  /* 44 / 52 / 62 */
   font-size: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
@@ -120,6 +120,14 @@ h1 {
 img {
   width: 100%;
   border-radius: 8px;
+}
+
+.show-desktop {
+  display: block;
+}
+
+.show-mobile {
+  display: none;
 }
 
 /* FEATURES */
@@ -225,4 +233,32 @@ footer {
   margin-bottom: 48px;
   font-size: 14px;
   color: #696969;
+}
+
+/* ------------------------ */
+/* MEDIA QUERIES */
+/* ------------------------ */
+
+@media (max-width: 1055px) {
+  .container {
+    padding: 24px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .show-desktop {
+    display: none;
+  }
+
+  .show-mobile {
+    display: unset;
+  }
 }
