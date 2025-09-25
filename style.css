@@ -28,7 +28,7 @@ GRAY COLOR: #39393A
 body {
   font-family: "Inter", sans-serif;
   color: #39393a;
-  border-bottom: 8px solid #4D685A;
+  border-bottom: 8px solid #4d685a;
 }
 
 .container {
@@ -65,6 +65,7 @@ h2 {
   text-transform: uppercase;
   padding: 16px 32px;
   display: inline-block;
+  border-radius: 100px;
 }
 
 .btn:hover,
@@ -106,6 +107,8 @@ h1 {
   font-size: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
+
+  /* text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4); */
 }
 
 .header-text {
@@ -116,11 +119,12 @@ h1 {
 
 img {
   width: 100%;
+  border-radius: 8px;
 }
 
 /* FEATURES */
 .features-icon {
-  stroke: #4D685A;
+  stroke: #4d685a;
   width: 32px;
   height: 32px;
   margin-bottom: 16px;
@@ -138,9 +142,10 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
-  background-color: #4D685A;
+  background-color: #4d685a;
   color: #fff;
   padding: 24px;
+  border-radius: 8px;
 }
 
 .testimonial-box {
@@ -162,6 +167,16 @@ img {
 }
 
 /* CHAIRS */
+.chair {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .chair-box {
   padding: 24px;
 }
